@@ -1,0 +1,11 @@
+You are a census taker working for the Nepali government. As you crest one final hill, your breath catches at the sight of a Himalayan sunrise, casting a glow on the village you’ve journeyed so far to reach. Your guide, a local, halts abruptly. Underneath the steady rustle of your census papers, you feel an itch of curiosity. After all, it’s not every day your job takes you to a village like this one.
+
+In the census table, you’ll find the following columns:
+-id, which uniquely identifies each census record
+-district, which is the name of the census record’s district
+-locality, which is the name of the census record’s locality within the district
+-families, which is the number of families associated with the census record
+-households, which is the total number of households associated with the census record (multiple families may live in the same household)
+-population, which is the population associated with the census record
+-male, which is the number of people associated with the census record who have identified as male
+-female, which is the number of people associated with the census record who have identified as female
