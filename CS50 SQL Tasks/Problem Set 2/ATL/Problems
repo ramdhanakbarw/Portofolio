@@ -1,0 +1,16 @@
+---Hartsfield-Jackson International Airport, perhaps better known as “ATL” for its IATA airport code, has been the busiest airport in the world since 1998. Located in Atlanta, Georgia in the United States, ATL served 93.7 million passengers in 2022.
+
+---Schema Requirements
+
+---Passengers (First name, last name, and age.)
+---Check-Ins (The exact date and time at which our passenger checked in and the flight they are checking in for.
+---Airlines (The name of the airline, the section of our airport where the airline operates (Concourses), there is 7 concourses: A, B, C, D, E, F, and T.
+---Flights (The flight number, the code of the airport they’re departing from and they’re heading to, the expected departure and the expected arrival date and time.
+
+---Sample Data
+
+---Your database should be able to represent
+---A passenger, Amelia Earhart, who is 39 years old
+---An airline, Delta, which operates out of concourses A, B, C, D, and T
+---A flight, Delta Flight 300, which is expected to depart from ATL on August 3rd, 2023 at 6:46 PM and arrive at BOS on August 3rd, 2023 at 9:09 PM
+---A check-in for Amelia Earhart, for Delta Flight 300, on August 3rd, 2023 at 3:03 PM
