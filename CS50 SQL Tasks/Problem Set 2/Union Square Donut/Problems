@@ -1,0 +1,19 @@
+Your task at hand is to create a SQLite database for Union Square Donuts from scratch. The implementation detail should minimally ensure that your database meets the team’s requirements and that it can represent the sample data.
+
+Schema Requirements
+
+Ingredients (The team would love to keep track of the price we pay per unit of ingredient (whether it’s pounds, grams, etc.))
+Donuts (The name of the donut, whether the donut is gluten-free, the price per donut, and the ingredients for each of the donuts)
+Orders (An order number, all the donuts in the order, and the customer who placed the order. (The team assume only one customer places any given order.))
+Customers (A customer’s first and last name, a history of their orders)
+
+Sample Data
+
+Your database should be able to represent…
+Cocoa, for which Union Square Donuts pays $5.00 for one pound.
+Sugar, for which Union Square Donuts pays $2.00 for one pound.
+Union Square Donuts’ “Belgian Dark Chocolate” donut, which is not gluten-free, costs $4.00, and includes the following ingredients:
+Cocoa, Flour, Buttermilk, Sugar
+Union Square Donuts’ “Back-To-School Sprinkles” donut, which is not gluten-free, costs $4.00, and includes the following ingredients:
+Flour, Buttermilk, Sugar, Sprinkles
+Order 1 from Luis Singh for 3 Belgian Dark Chocolate donuts and 2 Back-To-School Sprinkles donuts.
