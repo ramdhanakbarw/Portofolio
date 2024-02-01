@@ -1,0 +1,18 @@
+LinkedIn is “the world’s largest professional network” with a mission to “connect the world’s professionals to make them more productive and successful.” Perhaps you have an account? On the platform, users can post their professional experience (i.e., past jobs, education, etc.) and make connections with other people they’ve met, in-person or online.
+
+Schema Requirements
+
+Users (first and last name, username, password)
+Schools and Universities (The name of the school, the type of school, the school’s location,the year in which the school was founded)
+Companies (The name of the company, the company’s industry, the company’s location)
+Connections (Connections with People, Schools, and Companies)
+
+Sample Data
+
+Your database should be able to represent…
+A user, Claudine Gay, whose username is “claudine” and password is “password”.
+A user, Reid Hoffman whose username is “reid” and password is “password”.
+A school, Harvard University, which is a university located in Cambridge, Massachusetts, founded in 1636.
+A company, LinkedIn, which is a technology company headquartered in Sunnyvale, California.
+Claudine Gay’s connection with Harvard, pursuing a PhD from January 1st, 1993, to December 31st, 1998.
+Reid Hoffman’s connection with LinkedIn, with title “CEO and Chairman”, from January 1st, 2003 to February 1st, 2007
