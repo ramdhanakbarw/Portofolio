@@ -1,0 +1,28 @@
+A Bed and Breakfast (“BnB” for short!) is a short-term place one might stay and pay the owner for the service, similar to a hotel. Over the past few years, AirBnB has allowed most anyone to rent out their place, whether it’s a home, a cute cottage, or even a treehouse.
+You’re a data analyst for the City of Boston and you’re interested in discovering how the rise of AirBnB has changed the local tourist scene. 
+
+Schema
+
+There are three tables below to learn more about the schema of each table.
+
+listings table
+- id, which is the ID of the listing.
+- property_type, which is the type of the listing (e.g., “Entire rental unit”, “Private room in rental unit”, etc.).
+- host_name, which is the AirBnB username of the listing’s host.
+- accommodates, which is the listing’s maximum number of occupants.
+- bedrooms, which is the listing’s number of bedrooms.
+- description, which is the description of the listing on AirBnB.
+
+reviews table
+- id, which is the ID of the review.
+- listing_id, which is the ID of the listing which received the review.
+- date, which is the date the review was posted.
+- reviewer_name, which is the AirBnB username of the reviewer.
+- comments, which is the content of the review.
+
+availabilities table
+- id, which is the id of the availability.
+- listing_id, which is the listing ID associated with the availability.
+- date, which is the date of the availability.
+- available, which is whether the date is still available to be booked (TRUE or FALSE).
+-price, which is the price of staying on the given date.
