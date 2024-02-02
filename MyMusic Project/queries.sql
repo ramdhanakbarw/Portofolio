@@ -3,7 +3,7 @@ SELECT * FROM songs;
 SELECT * FROM albums;
 SELECT * FROM artist;
 
---create a view name Popular_Song, Where >= 80 very popular, 75-80=popular, <75= average
+--create a view Popular_Song, Where popularity >= 80 very popular, 75-80=popular, <75= average
 CREATE VIEW Popular_Song AS
 SELECT id, title, genre, popularity,
 CASE 
@@ -19,6 +19,25 @@ ORDER BY popularity DESC;
 SELECT * FROM Popular_Song
 WHERE NOT popularity_rate = 'average' AND release_year BETWEEN 2010 AND 2019
 ORDER BY popularity_rate DESC ;
+
+---create a view tempo_category
+CREATE VIEW tempo_category AS
+SELECT id, title, genre, tempo_bpm,
+CASE 
+    	WHEN tempo_bpm BETWEEN 20 AND 40 THEN 'Grave'
+	WHEN tempo_bpm BETWEEN 41 AND 65 THEN 'Lento'
+	WHEN tempo_bpm BETWEEN 66 AND 76 THEN 'Adagio'
+	WHEN tempo_bpm BETWEEN 77 AND 108 THEN 'Andante'
+	WHEN tempo_bpm BETWEEN 109 AND 120 THEN 'Moderato'
+	WHEN tempo_bpm BETWEEN 121 AND 168 THEN 'Allegro'
+	WHEN tempo_bpm BETWEEN 169 AND 200 THEN 'Presto'
+	ELSE 'Prestissimo'
+END as tempo_name
+FROM songs;
+
+---to show how many song in each tempo name
+SELECT tempo_name, count(tempo_name) FROM tempo_category
+GROUP BY tempo_name ORDER BY count(tempo_name) DESC ;
 
 --top 10 most sold copies album and the song title
 SELECT albums.name, songs.title, sold_copies FROM albums
