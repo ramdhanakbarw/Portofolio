@@ -1,0 +1,29 @@
+Harvard has a course shopping tool called my.harvard, with which students explore (and ultimately register for!) classes. To keep track of courses, students, and their registrations, my.harvard presumably uses some kind of underlying database. And yet, if you’ve ever used it, you’ll know that my.harvard isn’t especially… quick.
+In this problem, take some Harvard course data and create indexes to speed up typical queries on the database. Keep in mind that indexing every column isn’t always the best solution: you’ll need to consider trade-offs in terms of space and time, ultimately representing Harvard’s courses and students in the most efficient way possible.
+
+Within harvard.db, you’ll find five tables below to learn more about the schema of each individual table.
+
+students table
+- id, which is the student’s ID.
+- name, which is the student’s name.
+
+courses table
+- id, which is the courses’s ID.
+- department, which is the department in which the course is taught (e.g., “Computer Science”, “Economics”, “Philosophy”).
+- number, which is the course number (e.g., 50, 12, 330).
+- semester, which is the semester in which the class was taught (e.g., “Spring 2024”, “Fall 2023”).
+- title, which is the title of the course (e.g., “Introduction to Computer Science”).
+
+enrollments table
+- id, which is the ID to identify the enrollment.
+- student_id, which is the ID of the student enrolled.
+- course_id, which is the ID of the course in which the student is enrolled.
+
+requirements table
+- id, which is the ID of the requirement.
+- name, which is the name of the requirement.
+
+satisfies table
+- id, which is the ID of the course-requirement pair.
+- course_id, which is the ID of a given course.
+- requirement_id, which is the ID of the requirement which the given course satisfies.
