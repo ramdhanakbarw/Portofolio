@@ -6,7 +6,7 @@ CREATE TABLE `songs` (
     `genre` VARCHAR(255) NOT NULL,
     `release_year` INT NOT NULL,
     `duration_s` INT NOT NULL,
-    `tempo` INT NOT NULL,
+    `tempo_bpm` INT NOT NULL,
     `popularity` INT NOT NULL,
     PRIMARY KEY (`id`)
     ) ;
